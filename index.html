@@ -560,7 +560,8 @@
   </section>
 
   <!-- SECTION 2: ARTIKEL -->
-  <section id="artikel" class="max-w-6xl mx-auto px-4 pb-24">
+  <!-- UPDATED: Changed padding to py-12 md:py-24 to match other sections spacing (was only pb-24) -->
+  <section id="artikel" class="max-w-6xl mx-auto px-4 py-12 md:py-24">
     <div class="text-center mb-10 pt-8 border-t border-gray-100">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 tracking-wide font-messiri mt-8">Inspirasi Perjalanan
       </h2>
@@ -579,8 +580,8 @@
     </div>
   </section>
 
-  <!-- FOOTER SECTION (WHITE THEME) -->
-  <!-- UPDATED: Removed pb-8 from footer container to accommodate full-width copyright strip -->
+  <!-- NEW: FOOTER SECTION (WHITE THEME) -->
+  <!-- UPDATED: bg-white text-gray-800 border-t border-gray-200 -->
   <footer class="bg-white text-gray-800 pt-12 md:pt-24 border-t border-gray-200">
     <div class="max-w-6xl mx-auto px-4 mb-16">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
@@ -835,19 +836,17 @@
                         </div>
                         <div class="p-5 flex flex-col flex-grow relative bg-white transition-colors duration-500">
                             <div class="mb-3">
+                                <!-- UPDATED: group-hover:text-gold (Dark Gold) -->
                                 <h3 class="text-lg font-bold text-gray-900 leading-snug tracking-wide group-hover:text-gold transition-colors font-messiri">${pkg.title}</h3>
                             </div>
                             <div class="grid grid-cols-2 gap-y-2 gap-x-3 text-xs text-gray-600 mb-5 border-t border-gold/30 py-3 font-sans transition-colors">
                                 <div class="flex items-center gap-2">
-                                    <!-- FIXED ICON: Clock -->
                                     <i class="ph ph-clock text-lg text-gold"></i> <span class="font-medium">${pkg.duration}</span>
                                 </div>
                                 <div class="flex items-center gap-2">
-                                    <!-- FIXED ICON: Plane -->
                                     <i class="ph ph-airplane-tilt text-lg text-gold"></i> <span class="font-medium">${pkg.airline}</span>
                                 </div>
                                 <div class="flex items-center gap-2 col-span-2">
-                                    <!-- FIXED ICON: Map Pin -->
                                     <i class="ph ph-map-pin text-lg text-gold"></i> <span class="truncate font-medium">${pkg.hotels}</span>
                                 </div>
                             </div>
@@ -887,8 +886,10 @@
                                 <!-- FIXED ICON: Clock (Phosphor) -->
                                 <i class="ph ph-clock text-lg text-gold"></i> <span>${post.readTime}</span>
                             </div>
+                            <!-- UPDATED: group-hover:text-gold -->
                             <h3 class="text-base font-bold text-gray-900 mb-3 group-hover:text-gold transition-colors cursor-pointer leading-snug tracking-wide font-messiri">${post.title}</h3>
-                            <p class="text-gray-500 text-xs leading-relaxed mb-5 line-clamp-3 font-light font-sans transition-colors">${post.excerpt}</p>
+                            <!-- UPDATED: Font size text-xs -> text-sm (14px) -->
+                            <p class="text-gray-500 text-sm leading-relaxed mb-5 line-clamp-3 font-light font-sans transition-colors">${post.excerpt}</p>
                             <div class="mt-auto flex items-center justify-between pt-3 border-t border-gold/30">
                                 <div class="flex items-center gap-2">
                                     <img src="${post.authorImg}" alt="${post.author}" class="w-7 h-7 rounded-full object-cover border border-gold/30">
