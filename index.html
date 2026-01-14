@@ -79,52 +79,9 @@
 
     /* --- SWIPER CUSTOM STYLES --- */
     .swiper-slide {
-      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
       height: auto;
       display: flex;
       justify-content: center;
-      opacity: 1;
-      transform: scale(0.9);
-    }
-
-    .swiper-slide-active {
-      transform: scale(1.05);
-      z-index: 20;
-    }
-
-    .swiper-slide-active .card-container,
-    .swiper-slide-active .card-content {
-      background-color: #001A6E !important;
-      border-color: #001A6E !important;
-    }
-
-    .swiper-slide-active h3 {
-      color: #ffffff !important;
-    }
-
-    .swiper-slide-active .text-gray-600,
-    .swiper-slide-active .text-gold,
-    .swiper-slide-active .text-navy {
-      color: #ffffff !important;
-    }
-
-    .swiper-slide-active .lucide {
-      stroke: #ffffff !important;
-    }
-
-    .swiper-slide-active button {
-      background-color: #FFCF71 !important;
-      /* Gold Light */
-      color: #001A6E !important;
-      border-color: #FFCF71 !important;
-    }
-
-    .swiper-slide-active button .lucide {
-      stroke: #001A6E !important;
-    }
-
-    .swiper-slide-active .border-gold\/30 {
-      border-color: rgba(255, 207, 113, 0.2) !important;
     }
 
     .swiper-pagination-bullet-active {
@@ -438,82 +395,174 @@
     </div>
   </section>
 
-  <!-- NEW SECTION: TESTIMONI JAMAAH -->
-  <section id="testimoni" class="max-w-6xl mx-auto px-4 py-12 md:py-24 bg-slate-50 rounded-[3rem] my-12">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-navy mb-3 tracking-wide font-messiri">Kata Mereka</h2>
-      <div class="flex items-center justify-center gap-2 mb-4 opacity-80">
-        <div class="h-[1px] w-12 bg-gold"></div>
-        <div class="h-1 w-1 rounded-full bg-gold"></div>
-        <div class="h-[1px] w-12 bg-gold"></div>
-      </div>
-      <p class="text-gray-500 max-w-xl mx-auto text-base font-light leading-relaxed font-sans">
-        Pengalaman nyata dari para jamaah yang telah berangkat bersama ARYATI Tour & Travel.
-      </p>
+  <!-- NEW SECTION: TESTIMONI JAMAAH (INTERACTIVE SLIDER) -->
+  <section id="testimoni" class="py-20 bg-slate-50 relative overflow-hidden">
+    <!-- Background Decoration -->
+    <div class="absolute top-0 left-0 w-64 h-64 bg-gold/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2">
+    </div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-navy/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3">
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Testimoni 1 -->
-      <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-gray-100 relative">
-        <div class="absolute -top-6 left-8 bg-gold text-white p-3 rounded-2xl shadow-lg">
-          <i data-lucide="quote" class="w-6 h-6 fill-current"></i>
+    <div class="max-w-6xl mx-auto px-4 relative z-10">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-3 tracking-wide font-messiri">Kata Mereka</h2>
+        <div class="flex items-center justify-center gap-2 mb-4 opacity-80">
+          <div class="h-[1px] w-12 bg-gold"></div>
+          <div class="h-1 w-1 rounded-full bg-gold"></div>
+          <div class="h-[1px] w-12 bg-gold"></div>
         </div>
-        <p class="text-gray-600 mt-6 mb-6 font-light italic leading-relaxed">"Alhamdulillah perjalanan umroh sangat
-          lancar. Pembimbingnya sangat sabar dan fasilitas hotelnya benar-benar dekat dengan Masjidil Haram."</p>
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
-              alt="User" class="w-full h-full object-cover">
-          </div>
-          <div>
-            <h4 class="font-bold text-navy font-messiri">Bpk. H. Rahmat</h4>
-            <p class="text-xs text-gold font-bold uppercase tracking-wider">Jamaah 2024</p>
-          </div>
-        </div>
+        <p class="text-gray-500 max-w-xl mx-auto text-base font-light leading-relaxed font-sans">
+          Pengalaman nyata dari para jamaah yang telah berangkat bersama ARYATI Tour & Travel.
+        </p>
       </div>
 
-      <!-- Testimoni 2 -->
-      <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-gray-100 relative">
-        <div class="absolute -top-6 left-8 bg-gold text-white p-3 rounded-2xl shadow-lg">
-          <i data-lucide="quote" class="w-6 h-6 fill-current"></i>
-        </div>
-        <p class="text-gray-600 mt-6 mb-6 font-light italic leading-relaxed">"Pelayanannya luar biasa profesional.
-          Makanan kateringnya enak-enak, cocok dengan lidah orang tua saya. Terima kasih ARYATI."</p>
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop"
-              alt="User" class="w-full h-full object-cover">
-          </div>
-          <div>
-            <h4 class="font-bold text-navy font-messiri">Ibu Hj. Siti Aminah</h4>
-            <p class="text-xs text-gold font-bold uppercase tracking-wider">Jamaah 2025</p>
-          </div>
-        </div>
-      </div>
+      <!-- Swiper Testimoni -->
+      <div class="swiper testimonialSwiper !pb-14">
+        <div class="swiper-wrapper">
 
-      <!-- Testimoni 3 -->
-      <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-gray-100 relative">
-        <div class="absolute -top-6 left-8 bg-gold text-white p-3 rounded-2xl shadow-lg">
-          <i data-lucide="quote" class="w-6 h-6 fill-current"></i>
-        </div>
-        <p class="text-gray-600 mt-6 mb-6 font-light italic leading-relaxed">"Sangat merekomendasikan travel ini untuk
-          yang baru pertama kali umroh. Bimbingan manasiknya sangat jelas dan membantu."</p>
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop"
-              alt="User" class="w-full h-full object-cover">
+          <!-- Testimoni 1 -->
+          <div class="swiper-slide h-auto">
+            <div
+              class="bg-white p-8 rounded-[2.5rem] shadow-lg shadow-gray-200/50 border border-gray-100 relative h-full flex flex-col hover:border-gold/30 hover:shadow-xl hover:shadow-gold/10 transition-all duration-300 group">
+              <div
+                class="absolute -top-5 right-8 bg-gold text-white p-3 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <i data-lucide="quote" class="w-5 h-5 fill-current"></i>
+              </div>
+              <div class="mb-6 flex-grow">
+                <div class="flex gap-1 mb-4">
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                </div>
+                <p class="text-gray-600 font-light italic leading-relaxed text-sm">"Awalnya ragu berangkat sendiri, tapi
+                  tim ARYATI benar-benar mendampingi dari awal sampai akhir. Muthawifnya sangat membantu ibu-ibu seperti
+                  saya. Hotelnya juga sangat strategis."</p>
+              </div>
+              <div class="flex items-center gap-4 pt-6 border-t border-gray-50">
+                <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden border-2 border-gold/20">
+                  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop"
+                    alt="User" class="w-full h-full object-cover">
+                </div>
+                <div>
+                  <h4 class="font-bold text-navy font-messiri text-lg">Ibu Ratna Sari</h4>
+                  <p class="text-[10px] text-gold font-bold uppercase tracking-wider">Jamaah 2024</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <h4 class="font-bold text-navy font-messiri">Sdr. Fajar</h4>
-            <p class="text-xs text-gold font-bold uppercase tracking-wider">Jamaah 2025</p>
+
+          <!-- Testimoni 2 -->
+          <div class="swiper-slide h-auto">
+            <div
+              class="bg-white p-8 rounded-[2.5rem] shadow-lg shadow-gray-200/50 border border-gray-100 relative h-full flex flex-col hover:border-gold/30 hover:shadow-xl hover:shadow-gold/10 transition-all duration-300 group">
+              <div
+                class="absolute -top-5 right-8 bg-gold text-white p-3 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <i data-lucide="quote" class="w-5 h-5 fill-current"></i>
+              </div>
+              <div class="mb-6 flex-grow">
+                <div class="flex gap-1 mb-4">
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                </div>
+                <p class="text-gray-600 font-light italic leading-relaxed text-sm">"Paket Umroh Plus Turki-nya sangat
+                  berkesan. Jadwal tertata rapi, tidak terlalu capek, dan makanan Indonesianya juara. Istri saya sangat
+                  senang."</p>
+              </div>
+              <div class="flex items-center gap-4 pt-6 border-t border-gray-50">
+                <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden border-2 border-gold/20">
+                  <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"
+                    alt="User" class="w-full h-full object-cover">
+                </div>
+                <div>
+                  <h4 class="font-bold text-navy font-messiri text-lg">Bapak Hartono</h4>
+                  <p class="text-[10px] text-gold font-bold uppercase tracking-wider">Jamaah 2025</p>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Testimoni 3 -->
+          <div class="swiper-slide h-auto">
+            <div
+              class="bg-white p-8 rounded-[2.5rem] shadow-lg shadow-gray-200/50 border border-gray-100 relative h-full flex flex-col hover:border-gold/30 hover:shadow-xl hover:shadow-gold/10 transition-all duration-300 group">
+              <div
+                class="absolute -top-5 right-8 bg-gold text-white p-3 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <i data-lucide="quote" class="w-5 h-5 fill-current"></i>
+              </div>
+              <div class="mb-6 flex-grow">
+                <div class="flex gap-1 mb-4">
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                </div>
+                <p class="text-gray-600 font-light italic leading-relaxed text-sm">"Baru pertama kali umroh dan memilih
+                  ARYATI adalah keputusan tepat. Bimbingan ibadahnya detail banget, sesuai sunnah. Recommended buat anak
+                  muda yang mau umroh!"</p>
+              </div>
+              <div class="flex items-center gap-4 pt-6 border-t border-gray-50">
+                <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden border-2 border-gold/20">
+                  <img
+                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&auto=format&fit=crop"
+                    alt="User" class="w-full h-full object-cover">
+                </div>
+                <div>
+                  <h4 class="font-bold text-navy font-messiri text-lg">Mas Dimas Pratama</h4>
+                  <p class="text-[10px] text-gold font-bold uppercase tracking-wider">Jamaah 2025</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimoni 4 -->
+          <div class="swiper-slide h-auto">
+            <div
+              class="bg-white p-8 rounded-[2.5rem] shadow-lg shadow-gray-200/50 border border-gray-100 relative h-full flex flex-col hover:border-gold/30 hover:shadow-xl hover:shadow-gold/10 transition-all duration-300 group">
+              <div
+                class="absolute -top-5 right-8 bg-gold text-white p-3 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <i data-lucide="quote" class="w-5 h-5 fill-current"></i>
+              </div>
+              <div class="mb-6 flex-grow">
+                <div class="flex gap-1 mb-4">
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                  <i data-lucide="star" class="w-4 h-4 text-gold fill-gold"></i>
+                </div>
+                <p class="text-gray-600 font-light italic leading-relaxed text-sm">"Pelayanan cepat dan ramah.
+                  Pengurusan visa haji furoda kami sangat transparan. Alhamdulillah bisa berangkat tahun ini."</p>
+              </div>
+              <div class="flex items-center gap-4 pt-6 border-t border-gray-50">
+                <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden border-2 border-gold/20">
+                  <img
+                    src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?q=80&w=200&auto=format&fit=crop"
+                    alt="User" class="w-full h-full object-cover">
+                </div>
+                <div>
+                  <h4 class="font-bold text-navy font-messiri text-lg">Bpk. H. Sudirman</h4>
+                  <p class="text-[10px] text-gold font-bold uppercase tracking-wider">Jamaah Haji 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
 
   <!-- SECTION 2: ARTIKEL -->
-  <section id="artikel" class="max-w-6xl mx-auto px-4 py-12 md:py-24">
+  <section id="artikel" class="max-w-6xl mx-auto px-4 pb-24">
     <div class="text-center mb-10 pt-8 border-t border-gray-100">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 tracking-wide font-messiri mt-8">Inspirasi Perjalanan
       </h2>
@@ -537,8 +586,9 @@
     <div class="max-w-6xl mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
 
-        <!-- COL 1 -->
+        <!-- COL 1: BRAND & ABOUT (Logo Above About) -->
         <div class="md:col-span-1">
+          <!-- Logo (Above) -->
           <div class="flex items-center gap-2 mb-6">
             <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-gold text-navy">
               <i data-lucide="plane" class="transform -rotate-45 translate-x-0.5 w-4 h-4"></i>
@@ -548,6 +598,7 @@
               <span class="text-[9px] tracking-widest uppercase text-gold-light font-sans">Tour & Travel</span>
             </div>
           </div>
+          <!-- About Text (Below) -->
           <p class="text-gray-300 text-sm leading-relaxed mb-6 font-light font-sans">
             Mitra perjalanan ibadah terpercaya Anda. Mengutamakan kenyamanan, keamanan, dan bimbingan sesuai sunnah
             untuk kekhusyukan ibadah di tanah suci.
@@ -562,7 +613,7 @@
           </div>
         </div>
 
-        <!-- COL 2 -->
+        <!-- COL 2: QUICK LINKS -->
         <div>
           <h4 class="text-gold-light font-bold mb-6 tracking-wide font-messiri">Navigasi</h4>
           <ul class="space-y-3 text-sm text-gray-300 font-light font-sans">
@@ -577,7 +628,7 @@
           </ul>
         </div>
 
-        <!-- COL 3 -->
+        <!-- COL 3: LAYANAN -->
         <div>
           <h4 class="text-gold-light font-bold mb-6 tracking-wide font-messiri">Layanan</h4>
           <ul class="space-y-3 text-sm text-gray-300 font-light font-sans">
@@ -589,7 +640,7 @@
           </ul>
         </div>
 
-        <!-- COL 4 -->
+        <!-- COL 4: KONTAK -->
         <div>
           <h4 class="text-gold-light font-bold mb-6 tracking-wide font-messiri">Hubungi Kami</h4>
           <ul class="space-y-4 text-sm text-gray-300 font-light font-sans">
@@ -625,7 +676,6 @@
   <a href="https://wa.me/6288997766" target="_blank"
     class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 animate-bounce hover:animate-none flex items-center justify-center group">
     <i data-lucide="message-circle" class="w-8 h-8 fill-current"></i>
-    <!-- Tooltip -->
     <span
       class="absolute right-full mr-4 bg-white text-navy px-4 py-2 rounded-xl text-sm font-bold whitespace-nowrap shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
       Chat WhatsApp
@@ -654,7 +704,8 @@
     </button>
   </div>
 
-  <!-- JAVASCRIPT LOGIC -->
+  <!-- SCRIPTS MOVED TO BODY END TO PREVENT LOAD ERRORS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
 
@@ -733,6 +784,7 @@
 
       // --- HELPERS ---
       function getBadgeStyle(type) {
+        // Glassmorphism style: White with transparency, blur, and Navy text
         return 'bg-white/60 backdrop-blur-md text-navy border border-white/50 shadow-sm font-bold';
       }
 
@@ -741,7 +793,7 @@
       if (umrohContainer) {
         umrohPackages.forEach(pkg => {
           const cardHTML = `
-                    <div class="w-full max-w-sm bg-white rounded-[2.5rem] border border-gold/30 overflow-hidden relative group transition-colors duration-500 mx-auto shadow-lg shadow-gray-200/50 hover:-translate-y-2 hover:shadow-2xl hover:shadow-gray-400/50 transition-all">
+                    <div class="w-full max-w-sm bg-white rounded-[2.5rem] border border-gold/30 overflow-hidden relative group transition-colors duration-500 mx-auto shadow-lg shadow-gray-200/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-gold/10 hover:border-gold/30 transition-all">
                         <div class="relative h-48 overflow-hidden shrink-0 bg-gray-200">
                             <img src="${pkg.image}" alt="${pkg.title}" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" onerror="this.src='https://placehold.co/600x400/001A6E/ffffff?text=Image+Unavailable'">
                             <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
@@ -765,7 +817,7 @@
                             <div class="mb-3">
                                 <h3 class="text-lg font-bold text-gray-900 leading-snug tracking-wide group-hover:text-gold transition-colors font-messiri">${pkg.title}</h3>
                             </div>
-                            <div class="grid grid-cols-2 gap-y-2 gap-x-3 text-xs text-gray-600 mb-5 border-t border-gold/30 py-3 font-sans">
+                            <div class="grid grid-cols-2 gap-y-2 gap-x-3 text-xs text-gray-600 mb-5 border-t border-gold/30 py-3 font-sans transition-colors">
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="clock" class="w-3.5 h-3.5 text-gold stroke-[1.5]"></i> <span class="font-medium">${pkg.duration}</span>
                                 </div>
@@ -779,7 +831,7 @@
                             <div class="mt-auto flex items-center justify-between">
                                 <div>
                                     <p class="text-[9px] text-gray-400 uppercase tracking-widest font-semibold mb-0.5 font-sans">Mulai Dari</p>
-                                    <p class="text-base font-bold text-navy tracking-tight font-sans">${pkg.price}</p>
+                                    <p class="text-base font-bold text-navy tracking-tight font-sans transition-colors">${pkg.price}</p>
                                 </div>
                                 <button class="bg-white border border-gold text-gold hover:bg-gold hover:text-white px-4 py-2 rounded-full font-semibold text-xs transition-all duration-300 flex items-center gap-1.5 font-sans">
                                     Detail <i data-lucide="arrow-right" class="w-3.5 h-3.5 stroke-[2.5]"></i>
@@ -796,7 +848,7 @@
       if (blogContainer) {
         blogPosts.forEach(post => {
           const cardHTML = `
-                    <div class="w-full max-w-sm bg-white rounded-[2.5rem] p-0 flex flex-col group h-full transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-gray-400/50 duration-300 border border-gold/30 overflow-hidden mx-auto shadow-lg shadow-gray-200/50">
+                    <div class="w-full max-w-sm bg-white rounded-[2.5rem] p-0 flex flex-col group h-full transition-all hover:-translate-y-2 hover:shadow-xl hover:shadow-gold/10 duration-300 border border-gold/30 overflow-hidden mx-auto shadow-lg shadow-gray-200/50 hover:border-gold/30">
                         <div class="relative h-44 w-full overflow-hidden shrink-0 bg-gray-200">
                             <img src="${post.image}" alt="${post.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/600x400/001A6E/ffffff?text=Image+Unavailable'">
                             <div class="absolute inset-0 bg-navy/20 group-hover:bg-transparent transition-colors"></div>
@@ -806,16 +858,16 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="p-5 flex flex-col flex-grow">
-                            <div class="flex items-center gap-2 mb-2 text-xs text-gray-500 font-medium font-sans">
+                        <div class="p-5 flex flex-col flex-grow bg-white transition-colors duration-300">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-gray-500 font-medium font-sans transition-colors">
                                 <i data-lucide="clock" class="w-3.5 h-3.5 text-gold stroke-[1.5]"></i> <span>${post.readTime}</span>
                             </div>
-                            <h3 class="text-base font-bold text-gray-900 mb-3 group-hover:text-gold transition-colors cursor-pointer leading-snug tracking-wide font-messiri">${post.title}</h3>
-                            <p class="text-gray-500 text-xs leading-relaxed mb-5 line-clamp-3 font-light font-sans">${post.excerpt}</p>
+                            <h3 class="text-base font-bold text-gray-900 mb-3 group-hover:text-gold-light transition-colors cursor-pointer leading-snug tracking-wide font-messiri">${post.title}</h3>
+                            <p class="text-gray-500 text-xs leading-relaxed mb-5 line-clamp-3 font-light font-sans transition-colors">${post.excerpt}</p>
                             <div class="mt-auto flex items-center justify-between pt-3 border-t border-gold/30">
                                 <div class="flex items-center gap-2">
                                     <img src="${post.authorImg}" alt="${post.author}" class="w-7 h-7 rounded-full object-cover border border-gold/30">
-                                    <span class="text-xs font-semibold text-gray-700 font-sans">${post.author}</span>
+                                    <span class="text-xs font-semibold text-gray-700 font-sans transition-colors">${post.author}</span>
                                 </div>
                                 <a href="#" class="text-xs font-bold text-navy hover:text-gold flex items-center gap-1 transition-all group-hover:gap-2 font-sans">
                                     Baca <i data-lucide="arrow-right" class="w-3.5 h-3.5 stroke-[2.5]"></i>
@@ -825,6 +877,35 @@
                     </div>`;
           blogContainer.innerHTML += cardHTML;
         });
+      }
+
+      // --- INIT SWIPER (TESTIMONI) ---
+      if (typeof Swiper !== 'undefined') {
+        const testimonialSwiper = new Swiper(".testimonialSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 30
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40
+            }
+          }
+        });
+      } else {
+        console.warn("Swiper library is not loaded. Slider features may not work.");
       }
 
       // --- ICONS & NAVBAR LOGIC ---
@@ -846,14 +927,11 @@
       const toggleMenu = () => {
         const isClosed = mobileMenu.classList.contains('translate-x-full');
         if (isClosed) {
-          // Open Menu
           mobileMenu.classList.remove('translate-x-full');
           mobileBackdrop.classList.remove('hidden');
-          // Add small delay for fade-in effect
           setTimeout(() => mobileBackdrop.classList.remove('opacity-0'), 10);
           mobileToggle.innerHTML = '<i data-lucide="x" class="w-7 h-7"></i>';
         } else {
-          // Close Menu
           mobileMenu.classList.add('translate-x-full');
           mobileBackdrop.classList.add('opacity-0');
           setTimeout(() => mobileBackdrop.classList.add('hidden'), 300);
@@ -862,9 +940,7 @@
         lucide.createIcons();
       };
 
-      // Event Listeners
       mobileToggle.addEventListener('click', toggleMenu);
-      // Close on backdrop click
       mobileBackdrop.addEventListener('click', toggleMenu);
 
       window.addEventListener('scroll', () => {
