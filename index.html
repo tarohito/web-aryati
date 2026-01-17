@@ -560,7 +560,6 @@
   </section>
 
   <!-- SECTION 2: ARTIKEL -->
-  <!-- UPDATED: Changed padding to py-12 md:py-24 to match other sections spacing (was only pb-24) -->
   <section id="artikel" class="max-w-6xl mx-auto px-4 py-12 md:py-24">
     <div class="text-center mb-10 pt-8 border-t border-gray-100">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3 tracking-wide font-messiri mt-8">Inspirasi Perjalanan
@@ -580,18 +579,15 @@
     </div>
   </section>
 
-  <!-- NEW: FOOTER SECTION (WHITE THEME) -->
-  <!-- UPDATED: bg-white text-gray-800 border-t border-gray-200 -->
+  <!-- FOOTER SECTION (WHITE THEME) -->
   <footer class="bg-white text-gray-800 pt-12 md:pt-24 border-t border-gray-200">
     <div class="max-w-6xl mx-auto px-4 mb-16">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
 
-        <!-- COL 1: BRAND & ABOUT (Logo Above About) -->
+        <!-- COL 1: BRAND & ABOUT -->
         <div class="md:col-span-1">
-          <!-- Logo (Above) -->
           <div class="flex items-center gap-2 mb-6">
             <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-gold text-navy">
-              <!-- FIXED ICON -->
               <i class="ph ph-airplane-tilt text-xl"></i>
             </div>
             <div class="flex flex-col leading-none">
@@ -599,32 +595,23 @@
               <span class="text-[9px] tracking-widest uppercase text-gold font-sans">Tour & Travel</span>
             </div>
           </div>
-          <!-- About Text (Below) -->
           <p class="text-gray-500 text-sm leading-relaxed mb-6 font-light font-sans">
             Mitra perjalanan ibadah terpercaya Anda. Mengutamakan kenyamanan, keamanan, dan bimbingan sesuai sunnah
             untuk kekhusyukan ibadah di tanah suci.
           </p>
+          <!-- FIXED SOCIAL ICONS: Using Phosphor Icons -->
           <div class="flex gap-4">
-            <a href="#" class="text-navy hover:text-gold transition-colors bg-gray-100 p-2 rounded-full">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465C9.673 2.013 10.03 2 12.48 2h-.165zm-2.386 5.8a6.116 6.116 0 118.681 8.758 6.116 6.116 0 01-8.681-8.758zm1.9 1.646a4.14 4.14 0 105.827 5.877 4.14 4.14 0 00-5.827-5.877zM17.027 6.133a1.107 1.107 0 111.564 1.566 1.107 1.107 0 01-1.564-1.566z"
-                  clip-rule="evenodd" />
-              </svg>
+            <a href="#" class="text-navy hover:text-gold transition-colors bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full">
+              <i class="ph ph-instagram-logo text-xl"></i>
             </a>
-            <a href="#" class="text-navy hover:text-gold transition-colors bg-gray-100 p-2 rounded-full">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                  clip-rule="evenodd" />
-              </svg>
+            <a href="#" class="text-navy hover:text-gold transition-colors bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full">
+              <i class="ph ph-facebook-logo text-xl"></i>
             </a>
-            <a href="#" class="text-navy hover:text-gold transition-colors bg-gray-100 p-2 rounded-full">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
-                  clip-rule="evenodd" />
-              </svg>
+            <a href="#" class="text-navy hover:text-gold transition-colors bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full">
+              <i class="ph ph-youtube-logo text-xl"></i>
+            </a>
+            <a href="#" class="text-navy hover:text-gold transition-colors bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full">
+              <i class="ph ph-tiktok-logo text-xl"></i>
             </a>
           </div>
         </div>
@@ -678,7 +665,6 @@
     </div>
 
     <!-- COPYRIGHT -->
-    <!-- UPDATED: bg-gradient-to-r from-gold to-gold-light (Full Width), text-navy -->
     <div class="bg-gradient-to-r from-gold to-gold-light">
       <div
         class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-navy font-medium font-sans">
@@ -692,7 +678,6 @@
   </footer>
 
   <!-- FLOATING WHATSAPP BUTTON -->
-  <!-- UPDATED: Changed p-4 to w-16 h-16 for perfect circle shape -->
   <a href="https://wa.me/6288997766" target="_blank"
     class="fixed bottom-6 right-6 z-50 bg-green-500 text-white w-16 h-16 rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 animate-bounce hover:animate-none flex items-center justify-center group">
     <i class="ph ph-whatsapp-logo ph-fill text-3xl"></i>
@@ -702,7 +687,7 @@
     </span>
   </a>
 
-  <!-- MOBILE MENU COMPONENTS (Moved Outside Navbar) -->
+  <!-- MOBILE MENU COMPONENTS -->
   <div id="mobile-backdrop"
     class="fixed inset-0 bg-black/50 z-[60] hidden transition-opacity duration-300 opacity-0 md:hidden"></div>
 
@@ -724,7 +709,6 @@
     </button>
   </div>
 
-  <!-- SCRIPTS MOVED TO BODY END TO PREVENT LOAD ERRORS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -802,12 +786,10 @@
         }
       ];
 
-      // --- HELPERS ---
       function getBadgeStyle(type) {
         return 'bg-white/60 backdrop-blur-md text-navy border border-white/50 shadow-sm font-bold';
       }
 
-      // --- RENDER UMROH CARDS ---
       const umrohContainer = document.getElementById('umroh-container');
       if (umrohContainer) {
         umrohPackages.forEach(pkg => {
@@ -822,13 +804,11 @@
                             </div>
                             
                             <div class="absolute top-5 right-5 bg-navy/80 backdrop-blur-md border border-white/30 text-gold-light text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center gap-1 font-sans">
-                                <!-- FIXED ICON: Star -->
                                 <i class="ph ph-star-fill text-gold"></i> ${pkg.hotelRating}
                             </div>
                             
                             <div class="absolute bottom-3 left-5 text-white w-full pr-4">
                                 <p class="text-[9px] uppercase tracking-wider text-gold-light mb-0.5 flex items-center gap-1 font-semibold font-sans">
-                                    <!-- FIXED ICON: Calendar -->
                                     <i class="ph ph-calendar-blank text-sm"></i> Keberangkatan
                                 </p>
                                 <p class="text-base font-bold tracking-tight leading-tight font-sans">${pkg.departureDate}</p>
@@ -836,7 +816,6 @@
                         </div>
                         <div class="p-5 flex flex-col flex-grow relative bg-white transition-colors duration-500">
                             <div class="mb-3">
-                                <!-- UPDATED: group-hover:text-gold (Dark Gold) -->
                                 <h3 class="text-lg font-bold text-gray-900 leading-snug tracking-wide group-hover:text-gold transition-colors font-messiri">${pkg.title}</h3>
                             </div>
                             <div class="grid grid-cols-2 gap-y-2 gap-x-3 text-xs text-gray-600 mb-5 border-t border-gold/30 py-3 font-sans transition-colors">
@@ -856,7 +835,6 @@
                                     <p class="text-base font-bold text-navy tracking-tight font-sans transition-colors">${pkg.price}</p>
                                 </div>
                                 <button class="bg-white border border-gold text-gold hover:bg-gold hover:text-white px-4 py-2 rounded-full font-semibold text-xs transition-all duration-300 flex items-center gap-1.5 font-sans">
-                                    <!-- FIXED ICON: Caret Right -->
                                     Detail <i class="ph ph-caret-right text-sm"></i>
                                 </button>
                             </div>
@@ -866,7 +844,6 @@
         });
       }
 
-      // --- RENDER BLOG ---
       const blogContainer = document.getElementById('blog-container');
       if (blogContainer) {
         blogPosts.forEach(post => {
@@ -883,12 +860,9 @@
                         </div>
                         <div class="p-5 flex flex-col flex-grow bg-white transition-colors duration-300">
                             <div class="flex items-center gap-2 mb-2 text-xs text-gray-500 font-medium font-sans transition-colors">
-                                <!-- FIXED ICON: Clock (Phosphor) -->
                                 <i class="ph ph-clock text-lg text-gold"></i> <span>${post.readTime}</span>
                             </div>
-                            <!-- UPDATED: group-hover:text-gold -->
                             <h3 class="text-base font-bold text-gray-900 mb-3 group-hover:text-gold transition-colors cursor-pointer leading-snug tracking-wide font-messiri">${post.title}</h3>
-                            <!-- UPDATED: Font size text-xs -> text-sm (14px) -->
                             <p class="text-gray-500 text-sm leading-relaxed mb-5 line-clamp-3 font-light font-sans transition-colors">${post.excerpt}</p>
                             <div class="mt-auto flex items-center justify-between pt-3 border-t border-gold/30">
                                 <div class="flex items-center gap-2">
@@ -896,7 +870,6 @@
                                     <span class="text-xs font-semibold text-gray-700 font-sans transition-colors">${post.author}</span>
                                 </div>
                                 <a href="#" class="text-xs font-bold text-navy hover:text-gold flex items-center gap-1 transition-all group-hover:gap-2 font-sans">
-                                    <!-- FIXED ICON: Caret Right (Phosphor) -->
                                     Baca <i class="ph ph-caret-right text-sm"></i>
                                 </a>
                             </div>
@@ -906,7 +879,6 @@
         });
       }
 
-      // --- INIT SWIPER (TESTIMONI) ---
       if (typeof Swiper !== 'undefined') {
         const testimonialSwiper = new Swiper(".testimonialSwiper", {
           slidesPerView: 1,
@@ -931,11 +903,8 @@
             }
           }
         });
-      } else {
-        console.warn("Swiper library is not loaded. Slider features may not work.");
       }
 
-      // --- NAVBAR LOGIC ---
       const navbar = document.getElementById('navbar');
       const navLinks = document.querySelectorAll('.nav-link');
       const logoBg = document.getElementById('logo-bg');
@@ -943,12 +912,9 @@
       const logoSub = document.getElementById('logo-sub');
       const navBtn = document.getElementById('nav-btn');
       const mobileToggle = document.getElementById('mobile-toggle');
-
-      // NEW: Mobile Menu Elements
       const mobileMenu = document.getElementById('mobile-menu');
       const mobileBackdrop = document.getElementById('mobile-backdrop');
 
-      // NEW: Toggle Function
       const toggleMenu = () => {
         const isClosed = mobileMenu.classList.contains('translate-x-full');
         if (isClosed) {
@@ -969,74 +935,60 @@
 
       window.addEventListener('scroll', () => {
         if (!navbar) return;
-
         if (window.scrollY > 50) {
           navbar.classList.add('bg-white/70', 'backdrop-blur-xl', 'py-3');
-          navbar.classList.remove('bg-transparent', 'py-4');
-
+          navbar.classList.remove('bg-transparent', 'py-6');
           if (navLinks) {
             navLinks.forEach(link => {
               link.classList.remove('text-gold-light', 'hover:text-white');
               link.classList.add('text-gray-600', 'hover:text-gold');
             });
           }
-
           if (logoBg) {
             logoBg.classList.remove('bg-gold-light', 'text-navy');
             logoBg.classList.add('bg-navy', 'text-white');
           }
-
           if (logoText) {
             logoText.classList.remove('text-white');
             logoText.classList.add('text-navy');
           }
-
           if (logoSub) {
             logoSub.classList.remove('text-gold-light/90');
             logoSub.classList.add('text-gray-500');
           }
-
           if (navBtn) {
             navBtn.classList.remove('bg-gold-light', 'text-navy', 'hover:bg-white');
             navBtn.classList.add('bg-navy', 'text-white', 'hover:bg-gold');
           }
-
           if (mobileToggle) {
             mobileToggle.classList.remove('text-white');
             mobileToggle.classList.add('text-navy');
           }
-
         } else {
           navbar.classList.remove('bg-white/70', 'backdrop-blur-xl', 'py-3');
-          navbar.classList.add('bg-transparent', 'py-4');
-
+          navbar.classList.add('bg-transparent', 'py-6');
           if (navLinks) {
             navLinks.forEach(link => {
               link.classList.add('text-gold-light', 'hover:text-white');
               link.classList.remove('text-gray-600', 'hover:text-gold');
             });
           }
-
           if (logoBg) {
             logoBg.classList.add('bg-gold-light', 'text-navy');
             logoBg.classList.remove('bg-navy', 'text-white');
           }
-
           if (logoText) {
             logoText.classList.add('text-white');
             logoText.classList.remove('text-navy');
           }
-
           if (logoSub) {
             logoSub.classList.add('text-gold-light/90');
             logoSub.classList.remove('text-gray-500');
           }
-
           if (navBtn) {
             navBtn.classList.add('bg-gold-light', 'text-navy', 'hover:bg-white');
             navBtn.classList.remove('bg-navy', 'text-white', 'hover:bg-gold');
           }
-
           if (mobileToggle) {
             mobileToggle.classList.add('text-white');
             mobileToggle.classList.remove('text-navy');
